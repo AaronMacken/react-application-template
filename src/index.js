@@ -1,10 +1,8 @@
 import ReactDOM from 'react-dom/client';
 
-function App() {
-    return <h1>Rick and Morty API</h1>;
-}
+import Application from './components/Application/Application';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
-root.render(<App />);
+root.render(<Application />);
