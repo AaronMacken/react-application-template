@@ -29,11 +29,26 @@ module.exports = {
         }
       },
       {
-        // css support
-        // style loader is for injecting css into the dom at runtime
-        // css loader interprets certain css keywords like @import and url() and resolves them into JavaScript
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'] // order matters, webpack processes loaders from right to left
+        test: /\.s[ac]ss$/i, // scss and scss files
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              esModule: true, // enabled named exports for your css module classes
+              modules: {
+                localIdentName: '[name]-[local]--[hash:base64:5]' // how the class name is formatted
+              },
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
       }
     ]
   },
