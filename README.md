@@ -12,7 +12,7 @@ building initial project foundation / configuration
 
 # TODO
 
-- add support for typescript
+- implement Eslint
 - implement dev / prod code paths
 - investigate dev / prod optimization tools
 - scss / ts source maps for dev only
