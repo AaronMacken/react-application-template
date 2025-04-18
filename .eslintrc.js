@@ -1,6 +1,11 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['airbnb', 'airbnb/hooks', 'airbnb-typescript'],
+  extends: [
+    'airbnb',
+    'airbnb/hooks',
+    'airbnb-typescript',
+    'plugin:prettier/recommended'
+  ],
   parserOptions: {
     project: './tsconfig.json'
   },
@@ -10,6 +15,7 @@ module.exports = {
     }
   },
   rules: {
+    'prettier/prettier': 'error',
     'linebreak-style': [
       'error',
       process.platform === 'win32' ? 'windows' : 'unix'
