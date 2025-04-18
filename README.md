@@ -12,8 +12,6 @@ building initial project foundation / configuration
 
 # TODO
 
-- configure Prettier
-- prettier auto format is removing spaces, eslint is enforcing spaces application/index.ts
 - implement dev / prod code paths
 - investigate dev / prod optimization tools
 - scss / ts source maps for dev only
@@ -22,6 +20,7 @@ building initial project foundation / configuration
 - implement error boundary
 - implement github actions
 - implement husky for precommit / prepushing checks
+- add documentation on the commands you can run to format, lint, start, build ect.
 
 # Optimization Tools
 
