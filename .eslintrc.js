@@ -27,5 +27,13 @@ module.exports = {
         restrictedNamedExports: ['then']
       }
     ]
-  }
+  },
+  overrides: [
+    {
+      files: ['webpack.**.js', 'paths.js'],
+      parserOptions: {
+        project: null
+      }
+    }
+  ]
 };

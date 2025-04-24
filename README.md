@@ -12,7 +12,6 @@ building initial project foundation / configuration
 
 # TODO
 
-- implement dev / prod code paths
 - investigate dev / prod optimization tools
 - scss / ts source maps for dev only
 - implement react router
