@@ -39,7 +39,7 @@ module.exports = {
               modules: {
                 localIdentName: '[name]-[local]--[hash:base64:5]'
               },
-              sourceMap: true // dev only, but we'll keep it here for now and override in prod
+              sourceMap: true
             }
           },
           {
