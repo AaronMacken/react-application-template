@@ -13,7 +13,6 @@ building initial project foundation / configuration
 # TODO
 
 - investigate dev / prod optimization tools
-- scss / ts source maps for dev only
 - implement react router
 - implement jest
 - implement error boundary
