@@ -1,4 +1,5 @@
 import { useState, useEffect, ChangeEvent } from 'react';
+import type User from '@types/user';
 import * as styles from './inputValidation.scss';
 
 export default function InputValidation() {
