@@ -15,18 +15,15 @@ module.exports = {
     }
   },
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': 'warn',
+    '@typescript-eslint/no-unused-vars': 'warn',
+    'react/react-in-jsx-scope': 'off',
+    'no-restricted-exports': ['error', { restrictedNamedExports: ['then'] }],
     'linebreak-style': [
       'error',
       process.platform === 'win32' ? 'windows' : 'unix'
     ],
-    'react/react-in-jsx-scope': 'off',
-    'no-restricted-exports': [
-      'error',
-      {
-        restrictedNamedExports: ['then']
-      }
-    ]
+    'react/function-component-definition': ['off']
   },
   overrides: [
     {
