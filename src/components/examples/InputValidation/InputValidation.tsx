@@ -1,11 +1,11 @@
 import { useState, useEffect, ChangeEvent } from 'react';
-import type User from '@types/user';
+import { User } from '@customTypes/user';
 import * as styles from './inputValidation.scss';
 
 export default function InputValidation() {
-  const [inputValues, setInputValues] = useState({
+  const [inputValues, setInputValues] = useState<User>({
     name: '',
-    age: ''
+    age: 0
   });
 
   const [error, setError] = useState('');

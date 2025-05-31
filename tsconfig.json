@@ -6,7 +6,7 @@
       "@components/*": ["components/*"],
       "@utils/*": ["utils/*"],
       "@constants/*": ["constants/*"],
-      "@types/*": ["types/*"]
+      "@customTypes/*": ["customTypes/*"]
 
     },
     "outDir": "./dist/",
