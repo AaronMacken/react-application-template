@@ -18,7 +18,6 @@ module.exports = {
       '@utils': path.resolve(Paths.SRC_DIR, 'utils/'),
       '@constants': path.resolve(Paths.SRC_DIR, 'constants/'),
       '@customTypes': path.resolve(Paths.SRC_DIR, 'customTypes/'),
-
     }
   },
   module: {
