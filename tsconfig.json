@@ -7,7 +7,6 @@
       "@utils/*": ["utils/*"],
       "@constants/*": ["constants/*"],
       "@customTypes/*": ["customTypes/*"]
-
     },
     "outDir": "./dist/",
     "noImplicitAny": true,
