@@ -1,3 +1,5 @@
+import './index.scss';
+
 import ReactDOM from 'react-dom/client';
 
 import Application from '@components/Application';

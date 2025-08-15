@@ -5,14 +5,14 @@ const prodConfig = {
   mode: 'production',
   devtool: 'source-map', // full source maps (optional in prod, we can disable this later)
   output: {
-    filename: 'bundle.[contenthash].js', // cache-busting
+    filename: 'bundle.[contenthash].js' // cache-busting
   },
   optimization: {
     splitChunks: {
-      chunks: 'all',
+      chunks: 'all'
     },
-    runtimeChunk: 'single',
-  },
+    runtimeChunk: 'single'
+  }
   // You can add plugins like MiniCssExtractPlugin here
 };
 

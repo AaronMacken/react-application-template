@@ -3,7 +3,7 @@ module.exports = {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
-    '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+    '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
   },
   collectCoverage: true,
   collectCoverageFrom: [
@@ -11,11 +11,11 @@ module.exports = {
     '!src/**/*.d.ts',
     '!src/**/index.ts',
     '!src/constants/**',
-    '!src/customTypes/**',
+    '!src/customTypes/**'
   ],
   coverageReporters: ['text', 'lcov'],
   coverageThreshold: {
-  global: {
+    global: {
       branches: 80,
       functions: 80,
       lines: 80,
