@@ -1,7 +1,5 @@
 import { useState, ReactElement } from 'react';
 
-// https://www.youtube.com/watch?v=uDCBSnWkuH0
-
 const useForm = (steps: ReactElement[]) => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
 

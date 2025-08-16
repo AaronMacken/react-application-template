@@ -1,3 +1,48 @@
-body {
+/* Reset box-sizing to border-box for predictable sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove all default margins and paddings */
+* {
   margin: 0;
+  padding: 0;
+}
+
+/* Ensure html/body take full height */
+html,
+body {
+  height: 100%;
+}
+
+/* Remove default font size scaling issues */
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent iOS font resize after rotation */
+}
+
+/* Set default font and smooth rendering */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Remove list bullets and numbers */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove link underlines by default */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
