@@ -2,14 +2,24 @@ import { useForm } from '@hooks';
 
 import * as styles from './Form.scss';
 
-const stepsArray = [<p>step one</p>, <p>step two</p>, <p>step three</p>];
+const stepsArray = [
+  <p className={styles.step}>step one</p>,
+  <p className={styles.step}>step two</p>,
+  <p className={styles.step}>step three</p>
+];
 
 const Form = () => {
-  const { currentStepIndex, steps } = useForm(stepsArray);
+  const { step, currentStepIndex, totalSteps } = useForm(stepsArray);
 
   return (
     <div className={styles.root}>
-      <form>lorem ipsum form</form>
+      <form className={styles.form}>
+        <p>Lorem Ipsum Form</p>
+        <div className={styles.formSteps}>
+          {currentStepIndex} / {totalSteps}
+        </div>
+        {step}
+      </form>
     </div>
   );
 };
