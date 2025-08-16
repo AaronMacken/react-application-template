@@ -1,8 +1,15 @@
 .root {
+  // -- layout -- //
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  min-height: 100vh;
+
+  // -- base font -- //
+  font-family: monospace;
+  font-size: 1.25rem;
+  color: white;
+  letter-spacing: 2px;
+
   background-color: #3c3c3c;
 }
