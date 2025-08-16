@@ -3,9 +3,15 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
+      "@components": ["components/index"],
       "@components/*": ["components/*"],
+      "@hooks": ["hooks/index"],
+      "@hooks/*": ["hooks/*"],
+      "@utils": ["utils/index"],
       "@utils/*": ["utils/*"],
+      "@constants": ["constants/index"],
       "@constants/*": ["constants/*"],
+      "@customTypes": ["customTypes/index"],
       "@customTypes/*": ["customTypes/*"]
     },
     "outDir": "./dist/",
