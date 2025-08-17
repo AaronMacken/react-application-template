@@ -3,7 +3,7 @@ import { useState, ReactElement } from 'react';
 const useForm = (steps: ReactElement[]) => {
   const [currentStepIndex, setCurrentStepIndex] = useState(1);
 
-  function nextStep() {
+  function goNext() {
     setCurrentStepIndex((currentStep) => {
       const lastIndex = steps.length;
 
@@ -13,13 +13,11 @@ const useForm = (steps: ReactElement[]) => {
     });
   }
 
-  function previousStep() {
+  function goBack() {
     setCurrentStepIndex((currentStep) => {
-      const lastIndex = steps.length;
+      if (currentStep <= 1) return currentStep;
 
-      if (currentStep <= lastIndex) return currentStep;
-
-      return currentStep + 1;
+      return currentStep - 1;
     });
   }
 
@@ -32,9 +30,11 @@ const useForm = (steps: ReactElement[]) => {
     step: steps[currentStepIndex - 1],
     steps,
     totalSteps: steps.length,
+    isFirstStep: currentStepIndex === 1,
+    isLastStep: currentStepIndex === steps.length,
     goToStep,
-    nextStep,
-    previousStep
+    goNext,
+    goBack
   };
 };
 

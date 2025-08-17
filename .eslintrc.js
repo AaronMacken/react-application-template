@@ -26,7 +26,8 @@ module.exports = {
       'error',
       process.platform === 'win32' ? 'windows' : 'unix'
     ],
-    'react/function-component-definition': ['off']
+    'react/function-component-definition': ['off'],
+    'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }]
   },
   overrides: [
     {

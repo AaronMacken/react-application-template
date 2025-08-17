@@ -1,6 +1,6 @@
 .root {
   height: 20rem;
-  width: 20rem;
+  width: 30rem;
 
   position: relative;
   display: flex;
@@ -29,9 +29,9 @@
   right: 0.5rem;
 }
 
-.step {
-  flex: 0.8;
+.buttonWrapper {
+  margin-top: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
 }
