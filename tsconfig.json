@@ -5,6 +5,8 @@
     "paths": {
       "@components": ["components/index"],
       "@components/*": ["components/*"],
+      "@context": ["context/index"],
+      "@context/*": ["context/*"],
       "@hooks": ["hooks/index"],
       "@hooks/*": ["hooks/*"],
       "@utils": ["utils/index"],
@@ -22,7 +24,7 @@
     "allowJs": true,
     "moduleResolution": "node",
     "noUnusedLocals": false,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
