@@ -1,10 +1,11 @@
-import Form from '@components/examples/Form';
-import * as styles from './Application.scss';
+import { ThemeProvider } from '@context';
+
+import Sandbox from '@components/Sandbox';
 
 export default function Application() {
   return (
-    <div className={styles.root}>
-      <Form />
-    </div>
+    <ThemeProvider initialTheme="dark">
+      <Sandbox />
+    </ThemeProvider>
   );
 }

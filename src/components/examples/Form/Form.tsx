@@ -1,4 +1,5 @@
 import { useForm } from '@hooks';
+import { type ThemeType } from '@customTypes';
 import UserForm from './UserForm';
 import AddressForm from './AddressForm';
 import AccountForm from './AccountForm';
@@ -8,11 +9,7 @@ import * as styles from './Form.scss';
 
 const stepsArray = [<UserForm />, <AddressForm />, <AccountForm />];
 
-const renderButton = (
-  isIndexAtBoundary: boolean,
-  buttonText: string,
-  buttonCallback: () => void
-) => {
+const renderButton = (isIndexAtBoundary: boolean, buttonText: string, buttonCallback: () => void) => {
   if (isIndexAtBoundary) {
     return null;
   }
@@ -24,16 +21,12 @@ const renderButton = (
   );
 };
 
-const Form = () => {
-  const {
-    step,
-    currentStepIndex,
-    totalSteps,
-    isFirstStep,
-    isLastStep,
-    goNext,
-    goBack
-  } = useForm(stepsArray);
+type FormProps = {
+  theme: ThemeType;
+};
+
+const Form = ({ theme }: FormProps) => {
+  const { step, currentStepIndex, totalSteps, isFirstStep, isLastStep, goNext, goBack } = useForm(stepsArray);
 
   const backButton = renderButton(isFirstStep, 'Back', goBack);
   const nextButton = renderButton(isLastStep, 'Next', goNext);
