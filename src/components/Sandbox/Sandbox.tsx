@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { useTheme } from '@context';
+import ProductForm from '@components/examples/ProductForm';
+// import Counter from '@components/examples/Counter';
 // import Form from '@components/examples/Form';
-import Counter from '@components/examples/Counter';
 import { getIsDark } from '@utils';
 import * as styles from './Sandbox.scss';
 
@@ -13,12 +14,10 @@ const Sandbox = () => {
 
   return (
     <div className={styles[cls]}>
-      <h1>Hi</h1>
-
-      <p>This is a sandbox</p>
-
+      <p>sandbox</p>
+      <ProductForm />
+      {/* <Counter /> */}
       {/* <Form theme={theme} /> */}
-      <Counter />
     </div>
   );
 };
