@@ -18,7 +18,8 @@ module.exports = {
     'no-restricted-exports': ['error', { restrictedNamedExports: ['then'] }],
     'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
     'react/function-component-definition': ['off'],
-    'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }]
+    'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
+    'react/jsx-props-no-spreading': 'off',
   },
   overrides: [
     {
