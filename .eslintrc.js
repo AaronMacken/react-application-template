@@ -1,7 +1,13 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['jest'],
-  extends: ['airbnb', 'airbnb/hooks', 'airbnb-typescript', 'plugin:prettier/recommended', 'plugin:jest/recommended'],
+  extends: [
+    'airbnb',
+    'airbnb/hooks',
+    'airbnb-typescript',
+    'plugin:prettier/recommended',
+    'plugin:jest/recommended'
+  ],
   parserOptions: {
     project: './tsconfig.json'
   },
@@ -20,6 +26,8 @@ module.exports = {
     'react/function-component-definition': ['off'],
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
     'react/jsx-props-no-spreading': 'off',
+    'for-direction': 'off',
+    'no-plusplus': 'off'
   },
   overrides: [
     {
