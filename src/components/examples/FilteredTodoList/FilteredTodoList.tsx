@@ -22,11 +22,7 @@ type TodosProps = {
   onRemove: (id: string) => void;
 };
 
-const Todos = ({
-  todos,
-  onClick: handleClick,
-  onRemove: handleRemove
-}: TodosProps) => {
+const Todos = ({ todos, onClick: handleClick, onRemove: handleRemove }: TodosProps) => {
   return todos.map(({ id, isCompleted, todo }) => (
     <li>
       <button
@@ -114,11 +110,7 @@ const FilteredTodoList = ({ todos = TODOS }: FilteredTodoListProps) => {
         <option value="not-completed">Not Completed</option>
       </select>
       <ul>
-        <Todos
-          todos={filteredTodos}
-          onClick={handleTodoClick}
-          onRemove={removeTodo}
-        />
+        <Todos todos={filteredTodos} onClick={handleTodoClick} onRemove={removeTodo} />
       </ul>
     </>
   );

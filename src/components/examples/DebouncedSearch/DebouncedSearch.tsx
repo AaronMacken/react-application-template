@@ -14,9 +14,7 @@ const DebouncedSearch = () => {
     }
   }, [debouncedValue]);
 
-  const handleDebouncedSearch = ({
-    target: { value }
-  }: ChangeEvent<HTMLInputElement>) => {
+  const handleDebouncedSearch = ({ target: { value } }: ChangeEvent<HTMLInputElement>) => {
     setSearchInputValue(value);
 
     // debouncedCallback(() => setSearchQuery(value));
