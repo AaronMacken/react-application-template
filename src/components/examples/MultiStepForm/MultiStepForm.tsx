@@ -41,18 +41,13 @@ const MultiStepForm = () => {
     <StepThree {...data} onUpdateField={handleUpdateValue} />
   ];
 
-  const {
-    goToNextStep,
-    goToPreviousStep,
-    currentStepComponent,
-    stepComponents,
-    currentStepIndex
-  } = useMultiStepForm(steps);
+  const { goToNextStep, goToPreviousStep, currentStepComponent, stepComponents, currentStepIndex } =
+    useMultiStepForm(steps);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    if (currentStepIndex === stepComponents.length -1) {
+    if (currentStepIndex === stepComponents.length - 1) {
       console.log(data);
     }
 
@@ -76,11 +71,7 @@ const MultiStepForm = () => {
         </div>
         {currentStepComponent}
         <div>
-          <button
-            type="button"
-            disabled={currentStepIndex <= 0}
-            onClick={goToPreviousStep}
-          >
+          <button type="button" disabled={currentStepIndex <= 0} onClick={goToPreviousStep}>
             Back
           </button>
           <button type="submit">Next</button>

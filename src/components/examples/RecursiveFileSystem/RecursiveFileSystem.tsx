@@ -13,27 +13,17 @@ const DATA = [
   FILE_TWO,
   {
     name: 'nested folder',
-    folderItems: [
-      NESTED_FILE_ONE,
-      { name: 'nested folder 2', folderItems: [NESTED_FILE_TWO] }
-    ]
+    folderItems: [NESTED_FILE_ONE, { name: 'nested folder 2', folderItems: [NESTED_FILE_TWO] }]
   }
 ];
 
-const RecursiveFileSystem = ({
-  name = 'Top Level',
-  folderItems = DATA
-}: any) => {
+const RecursiveFileSystem = ({ name = 'Top Level', folderItems = DATA }: any) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const handleExpanded = () => setIsExpanded((prev) => !prev);
 
   return (
     <div>
-      <button
-        type="button"
-        className={styles.folderButton}
-        onClick={handleExpanded}
-      >
+      <button type="button" className={styles.folderButton} onClick={handleExpanded}>
         {name}
       </button>
       {isExpanded && (
