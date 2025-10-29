@@ -27,7 +27,9 @@ module.exports = {
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
     'react/jsx-props-no-spreading': 'off',
     'for-direction': 'off',
-    'no-plusplus': 'off'
+    'no-plusplus': 'off',
+    'lines-between-class-members': 'off',
+    '@typescript-eslint/lines-between-class-members': 'off'
   },
   overrides: [
     {
