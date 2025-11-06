@@ -1,5 +1,3 @@
-// -- second attempt -- //
-
 const ParenLikeCharacters = {
   '(': ')',
   '{': '}',
