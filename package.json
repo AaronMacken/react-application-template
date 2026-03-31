@@ -15,6 +15,7 @@
   "description": "",
   "devDependencies": {
     "@aaronmacken/eslint-config-react-application-template": "^2.0.1",
+    "@aaronmacken/typescript-config-react-application-template": "1.0.1",
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-react": "^7.26.3",

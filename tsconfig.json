@@ -1,5 +1,5 @@
-// necessary for recognizing our path alias defined in webpack.config.js
 {
+  "extends": "@aaronmacken/typescript-config-react-application-template/tsconfig.json",
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
@@ -16,18 +16,7 @@
       "@customTypes": ["customTypes/index"],
       "@customTypes/*": ["customTypes/*"]
     },
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "module": "ESNext",
-    "target": "ESNext",
-    "jsx": "react-jsx",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "outDir": "./dist/"
   },
   "include": ["src/**/*"]
 }
